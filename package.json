@@ -1,7 +1,7 @@
 {
   "name": "audara_test_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "_Prueba básica para desarrollador Backend._",
   "main": "server.js",
   "scripts": {
     "start": "node .",
@@ -24,7 +24,8 @@
     "body-parser": "1.18.2",
     "cors": "2.8.5",
     "dotenv": "8.2.0",
-    "express": "24.17.1",
+    "express": "^4.17.1",
     "mariadb": "2.3.1"
-  }
+  },
+  "keywords": []
 }
