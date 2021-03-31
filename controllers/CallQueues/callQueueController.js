@@ -1830,9 +1830,9 @@ const getQueueResultData = async (id) => {
   // Gets queue data
   const result = await pool.query(`SELECT * FROM queues_in_results WHERE id = ?`, [id]);
   delete result["meta"];
-
+  console.log(result)
   // Checks for errors
-  if (!result || result.length < 1) return false;
+  // if (!result || result.length < 1) return false;
   
   // Data
   const data = result[0];

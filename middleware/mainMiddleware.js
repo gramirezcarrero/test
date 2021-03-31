@@ -18,14 +18,14 @@ const apiCodeError = {
 const mainMiddleware = async(req, res) => {
     try {
         // Gets apiCode
+        
         const apiCode = req.query['apiCode'];
-        if (!apiCode) return res.status(200).json(apiCodeError);
+        // if (!apiCode) return res.status(200).json(apiCodeError);
 
         // Call to API switch
         return await apiSwitch(apiCode, req, res);
     }
     catch (error) {
-        console.log(error);
         return res.status(500).json(serverError);
     }
 }

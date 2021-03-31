@@ -15,7 +15,7 @@ const apiSwitch = async (apiCode, req, res) => {
         case "2900":
             return await require('../controllers/CallQueues/callQueueController').handleCode(apiCode, req, res);
         case "2500":
-            return await require('../controllers/CallRates/callRatesController').handleCode(apiCode, req, res);
+            return await require('../controllers/Rates/ratesController').handleCode(apiCode, req, res);
 
             //return res.status(200).json({msg:'30000'})
         // -- DEFAULT -- //
